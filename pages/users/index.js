@@ -2,10 +2,15 @@ import React from "react";
 import Link from "next/link";
 import Layout from "../../components/Layaout";
 import Title from "../../components/Title";
+import Head from "next/head";
 
 function User({ users }) {
   return (
     <Layout>
+      <Head>
+        <title>Landig page de users</title>
+        <meta name="description" content="En este curso de webtutoriales aprenderas next js"/>
+      </Head>
       <div>
         <Title>Users Page</Title>
         <div className="grid">

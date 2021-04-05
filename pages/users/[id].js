@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
 import Layout from "../../components/Layaout";
@@ -14,6 +15,10 @@ function User(props) {
 
   return (
     <Layout>
+      <Head>
+        <title>User #{id}</title>
+        <meta name="description" content="En este curso de webtutoriales aprenderas next js"/>
+      </Head>
       <div>
         <Title>User ID {user.id}</Title>
         <div className="card">

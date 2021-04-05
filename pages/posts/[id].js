@@ -2,6 +2,7 @@ import React from "react";
 import { useRouter } from "next/router";
 import Layout from "../../components/Layaout";
 import Title from "../../components/Title";
+import Head from "next/head";
 
 function Post({ post }) {
   const router = useRouter();
@@ -9,6 +10,10 @@ function Post({ post }) {
   const { id, userId, title, body } = post;
   return (
     <Layout>
+      <Head>
+        <title>Post #{id}</title>
+        <meta name="description" content="En este curso de webtutoriales aprenderas next js"/>
+      </Head>
       <div>
         <Title>Post Details</Title>
         <div className="card">

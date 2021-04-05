@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import Layout from "../../components/Layaout";
@@ -11,6 +12,10 @@ function Posts({ posts = [] }) {
 
   return (
     <Layout>
+      <Head>
+        <title>Landig page de post</title>
+        <meta name="description" content="En este curso de webtutoriales aprenderas next js"/>
+      </Head>
       <div>
         <Title>Posts Page</Title>
         <div className="grid">
