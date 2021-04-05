@@ -6,6 +6,7 @@ function Home() {
     <Layout>
       <Title>Home Page</Title>
       <p>Next js con web tutoriales</p>
+      <p>Terminando el curso</p>
       <style jsx>
         {`
           p {
